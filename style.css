@@ -1,6 +1,34 @@
 body{
-    font-size: 50px;
     display: flex;
     flex-direction: column;
     align-items:center ;
+}
+
+
+
+/* for dark mode */
+
+body.light-mode{
+    background-color: whilte;
+    color: black;
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+
+
+#link-div{
+    margin-right: 100px;
+}
+
+#social-links li{
+    list-style-type: none;
+}
+
+#social-links li a{
+    text-decoration: none;
+    color: blue;
+
 }
