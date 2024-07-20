@@ -12,13 +12,92 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 #self-image {
     margin-top: 50px;
     width: 200px;
     height: 200px;
-    border-radius: 50% ;
-    background-color: red;
+    background-image: url('images/self_image.jpeg');
+    background-position: 26% 20%;
+    background-size: 800px;
+    border-radius: 50%;
+}
+ /* #self-image:hover {
+    width: 1100px;
+    margin-left: 1000px;
+    height: 800px;
+    position: absolute;
+    border-radius: 0px;
+    background-position: 10% 20%;
+    background-size: auto;
+    transition: 0.5s;
+
+    
+}  */
+
+#name-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#name-work h1{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-family:sans-serif;
+    font-size: 28px;
+}
+
+#name-work h5{
+    margin-top: 0px;
+    padding-top: 10px;
+    font-family: Quicksand,Arial,  sans-serif;
+}
+
+#role{
+    color: #65BFF4;
+    font-family: Quicksand,Arial,  sans-serif;
+
+}
+
+#navigator ul{
+    height: 250px;
+    display: flex;
+    padding-right: 45px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+#navigator ul li{
+    
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navigator ul li:hover{
+    border-bottom: 2px solid #65BFF4;
+}
+
+#navigator ul li {
+    text-decoration: none;
+    color: black;
+}
+
+#copyright-info{
+display: flex;
+
+flex-direction: column;
+align-items: center;
+}
+
+#copyright-info p{
+    padding: 0px;
+    margin: 0px;
 }
