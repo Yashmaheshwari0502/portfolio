@@ -41,34 +41,41 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Barrack Buddy Website",
+    image: project1, // Replace with the actual image path
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Developed a responsive React website for Barrack’s Buddy, a platform supporting defense aspirants, with features like user authentication, API integration, and responsive UI design.",
+    technologies: ["React.js", "JavaScript", "REST APIs"],
+
+    githubLink: "https://github.com/Yashmaheshwari0502/Barracks-BUDDY", // Optional: Add GitHub link for the repository
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Handwritten Digit Recognition",
+    image: project2, // Replace with the actual image path
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Developed a handwritten digit recognition system using the MNIST dataset with TensorFlow and Keras, achieving an accuracy of over 98%.",
+    technologies: ["TensorFlow", "Keras", "Python"],
+    githubLink: "https://github.com/Yashmaheshwari0502/Handwritten-Digit-Recoginition", // Optional: Add GitHub link
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "California Housing Price Prediction",
+    image: project3, // Replace with the actual image path
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Created a machine learning model to predict housing prices in California based on various features, optimizing the model using multiple regression algorithms and cross-validation.",
+    technologies: ["Scikit-learn", "Python", "Pandas"],
+    githubLink: "https://github.com/Yashmaheshwari0502/House-Price-Prediction", // Optional: Add GitHub link
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Travel Hub App",
+    image: project4, // Replace with the actual image path
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Developed a comprehensive travel hub application during an internship at Ricoz, integrating features like flight, hotel, and rental car bookings, real-time travel data, and secure payment processing.",
+    technologies: ["Flutter", "Dart"],
+    githubLink: "https://github.com/Yashmaheshwari0502/ricoz_company_travel_app", // Optional: Add GitHub link
   },
 ];
+
+
 
 export const CONTACT = {
   address: "New Delhi , India",
