@@ -1,10 +1,11 @@
-import { RiReactjsLine } from 'react-icons/ri'
-import { TbBrandNextjs } from 'react-icons/tb'
-import { SiMongodb } from 'react-icons/si'
-import { DiRedis } from 'react-icons/di'
-import { FaNodeJs } from 'react-icons/fa'
-import { BiLogoPostgresql } from 'react-icons/bi'
 import { motion } from "framer-motion"
+
+import cppIcon from "../assets/icons/c++.svg";
+import pythonIcon from "../assets/icons/python.svg";
+import reactIcon from "../assets/icons/react.svg";
+import gitIcon from "../assets/icons/git.svg";
+import flutterIcon from "../assets/icons/flutter.svg"
+import nodejsIcon from "../assets/icons/nodejs.svg"
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -23,60 +24,101 @@ const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-24">
             <motion.h1
-            whileInView={{opacity:1,y:0}}
-            initial={{opacity:0,y:-100}}
-            transition={{duration:1.5}}
-            className="my-20 text-center text-4xl">Technologies</motion.h1>
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5 }}
+                className="my-20 text-center text-4xl">Technologies</motion.h1>
+
             <motion.div
-                whileInView={{opacity:1,x:0}}
-                initial={{opacity:0,x:-100}}
-                transition={{duration:1.5}}
-            className="flex flex-wrap items-center justify-center gap-4">
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+                className="flex flex-wrap items-center justify-center gap-4">
+
+                {/* C++ */}
                 <motion.div
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(1)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
+                    className=" p-4">
+                    <img
+                        src={cppIcon}
+                        alt="C++"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+
+                {/* Python */}
                 <motion.div
                     variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <TbBrandNextjs className="text-7xl " />
+                    className=" p-4">
+                    <img
+                        src={pythonIcon}
+                        alt="Python"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+
+                {/* React */}
                 <motion.div
                     variants={iconVariants(5)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiMongodb className="text-7xl text-green-500" />
+                    className=" p-4">
+                    <img
+                        src={reactIcon}
+                        alt="React"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+                {/* nodejs */}
                 <motion.div
-                    variants={iconVariants(2)}
+                    variants={iconVariants(1)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <DiRedis className="text-7xl text-red-700" />
+                    className=" p-4">
+                    <img
+                        src={nodejsIcon}
+                        alt="nodejs"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+                {/* Flutter */}
                 <motion.div
-                    variants={iconVariants(6)}
+                    variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <FaNodeJs className="text-7xl text-green-500" />
+                    className=" p-4">
+                    <img
+                        src={flutterIcon}
+                        alt="flutter"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+                {/* Git */}
                 <motion.div
-                    variants={iconVariants(4)}
+                    variants={iconVariants(1)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <BiLogoPostgresql className="text-7xl text-sky-700" />
+                    className=" p-4">
+                    <img
+                        src={gitIcon}
+                        alt="git"
+                        className="text-7xl"
+                        style={{ width: '100px', height: '100px' }}
+                    />
                 </motion.div>
+
+
 
             </motion.div>
-
         </div>
     )
 }
