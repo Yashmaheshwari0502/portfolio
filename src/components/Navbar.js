@@ -3,6 +3,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaFilePdf } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -11,6 +13,20 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="mx-2 w-72" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+        <a
+          href="/YashMaheshwari.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download="Yash_Maheshwari_Resume.pdf"
+          aria-label="Download Resume"
+        >
+          <FaFilePdf />
+        </a>
+
+
+        <a href="https://leetcode.com/u/yashmaheshwari0502/" target="_blank" rel="noopener noreferrer" aria-label="Leetcode">
+          <SiLeetcode />
+        </a>
         <a href="https://www.linkedin.com/in/yash-maheshwari-903294214/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin />
         </a>
