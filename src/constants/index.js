@@ -9,7 +9,7 @@ export const ABOUT_TEXT = `I am a passionate Full Stack Developer with a strong 
 
 export const EXPERIENCES = [
   {
-    year: "October 2024 - Present",
+    year: "October 2024 - December 2024",
     role: "Frontend Developer",
     company: "Barracks Buddy",
     description: `Developed a responsive React.js-based website for Barracks Buddy, a platform supporting defense aspirants. Focused on creating an intuitive user interface, implementing responsive design, and integrating secure APIs for authentication.`,
